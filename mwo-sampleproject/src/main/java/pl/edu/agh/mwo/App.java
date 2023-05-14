@@ -1,13 +1,26 @@
 package pl.edu.agh.mwo;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import java.util.Scanner;
+
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String N, Z;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Wpisz: N - nowa gra, Z - zakończ");
+        String start = scan.nextLine();
+        switch(start) {
+            case ("N"):
+                System.out.println("START");   //start();funkcja uruchamiająca
+                break;
+            case ("Z"):
+                System.out.println("Do widzenia!");
+                break;
+        }
     }
+
+
 }
